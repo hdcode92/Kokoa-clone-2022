@@ -1,4 +1,4 @@
-const name__friendstab = document.querySelector("#name__friendstab");
+const name__friendstab = document.querySelector(".name__friendstab");
 const savedUsername = localStorage.getItem("username");
 
 function paintUsername(savedUsername){
