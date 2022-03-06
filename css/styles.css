@@ -20,12 +20,12 @@
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/chat.css";
+
 body {
   color: white;
   font-family: fantasy;
-  height: 100vh;
+  height: 100%;
 }
-
 .main-screen {
   padding: 0px var(--horizontal-space);
 }
