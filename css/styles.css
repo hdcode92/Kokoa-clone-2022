@@ -21,8 +21,8 @@
 @import "screens/settings.css";
 @import "screens/chat.css";
 body {
-  color: #2e363e;
-  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-family: fantasy;
   height: 100vh;
 }
 

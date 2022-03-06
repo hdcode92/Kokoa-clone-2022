@@ -1,3 +1,11 @@
+.bgimg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  margin-top: -200px;
+}
+
 .welcome-header {
   margin: 90px 0px;
   text-align: center;
@@ -8,19 +16,21 @@
 
 .welcome-header__title {
   margin-bottom: 20px;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 23px;
+  font-weight: bolder;
+  color: white;
 }
 
 .welcome-header__text {
-  width: 60%;
-  opacity: 0.7;
+  opacity: 1;
+  color: white;
 }
 
 #login-form {
   display: flex;
   flex-direction: column;
   margin: 0px 30px;
+  align-items: center;
 }
 
 #login-form input {
@@ -28,29 +38,52 @@
   padding: 15px 0px;
   font-size: 18px;
   margin-bottom: 25px;
+  background-color: transparent;
+  width: 80%;
+  font-family: fantasy;
+  font-weight: 600;
 }
 
 #login-form input:not([type="submit"]) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
 }
 
 #login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: lightgray;
+  font-weight: bolder;
 }
 
+#login-form input[type="text"],
+#login-form input[type="password"] {
+  color: white;
+  opacity: 1;
+}
 #login-form input:focus {
-  border-color: var(--yellow);
+  border-color: rgb(248, 236, 60);
+  box-shadow: 0px 3px 5px 0px rgb(241, 226, 7);
+  opacity: 0.7;
 }
 
 #login-form input[type="submit"] {
-  background-color: var(--yellow);
   cursor: pointer;
   padding: 20px 0px;
-  border-radius: 5px;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: rgb(230, 228, 228);
+  box-shadow: 1px 1px 15px 15px lightgray;
+  color: grey;
+  margin-top: 20px;
+}
+
+#login-form input[type="submit"]:hover {
+  background-color: rgb(248, 236, 60);
+  box-shadow: 1px 1px 15px 15px rgb(241, 226, 7);
 }
 
 #login-form a {
+  margin-top: 25px;
   text-align: center;
   text-decoration: none;
   color: inherit;

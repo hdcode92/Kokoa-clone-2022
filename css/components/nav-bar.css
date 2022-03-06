@@ -1,8 +1,9 @@
 .nav {
-  background-color: #f9f9fa;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.5);
   bottom: 0;
   width: 100%;
-  padding: 20px 50px;
+  padding: 15px 50px;
   box-sizing: border-box;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -14,7 +15,7 @@
 }
 
 .nav__link {
-  color: #2e363e;
+  color: white;
   position: relative;
 }
 
@@ -79,4 +80,9 @@
 
 .nav__btn:last-child {
   animation-delay: 0.8s;
+}
+
+.nav {
+  color: white;
+  background-color: rgb(0, 0, 0, 0.5);
 }
