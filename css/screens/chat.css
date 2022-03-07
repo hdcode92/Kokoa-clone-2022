@@ -55,7 +55,6 @@
 .message-row {
   width: 100%;
   display: flex;
-  margin-bottom: 25px;
 }
 
 .message-row img {
@@ -70,15 +69,10 @@
   display: block;
 }
 
-.message__info {
-  display: flex;
-  align-items: flex-end;
-}
-
 .message__bubble {
   color: white;
   background-color: rgb(0, 0, 0, 0.5);
-  padding: 13px;
+  padding: 10px;
   font-size: 18px;
   border-radius: 15px;
   border-top-left-radius: 0px;
@@ -105,7 +99,13 @@
 }
 
 .message-row--own .message__info {
-  flex-direction: row-reverse;
+  flex-direction: column;
+}
+.message__info li {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .reply {
@@ -191,4 +191,8 @@
 
 .reply:focus-within {
   transform: translateY(80px);
+}
+
+.message__info li {
+  list-style: none;
 }
